@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div className='flex flex-col items-center'>
-        <h1 className='text-7xl'> Hello world!!</h1>
+        <h1 className='text-2xl'> Hello world!!</h1>
       </div>
     </>
   )
