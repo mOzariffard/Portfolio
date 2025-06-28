@@ -22,7 +22,6 @@ const StartBackground = () => {
         return ()=> window.removeEventListener('resize', handleResize);
 
     },[])
-
     const generateStars = () =>{
         const numbersOfStars = Math.floor(window.innerWidth * window.innerHeight /10000);
         
@@ -40,7 +39,7 @@ const StartBackground = () => {
         }
 
         setStars(newStars);
-    };
+    }
 
     const generateMeteors = () =>{
         const numbersOfMeteors = 4;
@@ -59,7 +58,7 @@ const StartBackground = () => {
         }
 
         setMeteors(newMeteors);
-    };
+    }
 
 
   return (
