@@ -2,8 +2,8 @@ import React from 'react'
 import ThemeToggle from '@/components/ThemeToggle'
 import StartBackground from '@/components/StartBackground'
 import Navbar from '@/components/Navbar'
-import HeroSection from '@/components/HeroSection'
-import AboutSection from '@/components/AboutSection'
+import HeroSection from '../components/HeroSection'
+import AboutMe from '../components/AboutMe'
 
 const Home = () => {
   return (
@@ -17,7 +17,7 @@ const Home = () => {
         {/*----------------Main Content----------------*/}
         <main>
         <HeroSection />
-        <AboutSection />
+        <AboutMe />
         </main>
         {/*----------------Footer----------------*/}
 

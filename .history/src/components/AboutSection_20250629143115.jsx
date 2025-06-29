@@ -1,0 +1,15 @@
+import React from 'react'
+
+const AboutSection = () => {
+  return (
+    <section id='about' className='py-24 px-4 relative'>
+      <div className='container mx-auto max-w-5xl'>
+        <div className='text-3xl md:text-4xl font-bold mb-12 text-center'>
+          About <span className='text-primary'>Me</span>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default AboutSection
