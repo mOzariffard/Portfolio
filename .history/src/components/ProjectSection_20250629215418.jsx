@@ -154,8 +154,8 @@ const ProjectSection = () => {
                 </div>
 
                 <div className='text-center mt-12'>
-                    <a href="https://github.com/mOzariffard" target='_blank' className='cosmic-button w-fit flex items-center gap-2 mx-auto'>
-                        Check My Github <ArrowRight size={16}/>
+                    <a href="">
+                        Check My Github <ArrowRight size={20} className='inline ml-2' />
                     </a>
                 </div>
             </div>
