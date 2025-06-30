@@ -6,6 +6,7 @@ import HeroSection from '@/components/HeroSection'
 import AboutSection from '@/components/AboutSection'
 import SkillsSection from '@/components/SkillsSection'
 import ProjectSection from '@/components/ProjectSection'
+import Certificate from '../components/CertificateSection'
 import CertificateSection from '../components/CertificateSection'
 
 const Home = () => {
