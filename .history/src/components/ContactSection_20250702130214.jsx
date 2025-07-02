@@ -1,7 +1,7 @@
 import { Github, Instagram, Linkedin, Mail, Phone, Send, Twitch } from 'lucide-react'
 import React , {useState} from 'react'
 import { cn } from '@/lib/utils'
-import useToast from 'react-hook-toast';
+import { useToast } from '../hooks/use-toast'
 import "react-hook-toast/dist/style.css";
 
 

@@ -1,8 +1,7 @@
 import { Github, Instagram, Linkedin, Mail, Phone, Send, Twitch } from 'lucide-react'
-import React , {useState} from 'react'
+import React from 'react'
 import { cn } from '@/lib/utils'
-import useToast from 'react-hook-toast';
-import "react-hook-toast/dist/style.css";
+import { useToast } from '../hook/use-toast';
 
 
 const ContactSection = () => {
@@ -13,17 +12,13 @@ const ContactSection = () => {
     const handleSubmit = (e)=>{
             e.preventDefault();
 
-            setIsSubmitting(true);
-
             setTimeout(() => {
                 toast({
                     title: "Message Sent",
                     description:"Thank you for reaching out! I'll get back to you soon.",
-                    
-                });
-                setIsSubmitting(false);
-            }, 1500);
 
+                });
+            }, 1500);
     };
 
   return (
@@ -133,10 +128,10 @@ const ContactSection = () => {
                      />
                     </div>
 
-                    <button disabled={isSubmitting} type='submit' className={cn('cosmic-button w-full flex justify-center gap-2',
+                    <button type='submit' className={cn('cosmic-button w-full flex justify-center gap-2',
 
                     )}>
-                        {isSubmitting ? "Sending...": "Send Message"}
+                        Send Message
                         <Send size={17} />
                     </button>
                 </form>
