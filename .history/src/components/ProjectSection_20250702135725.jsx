@@ -10,7 +10,7 @@ const projects = [
         id: 1,
         title: 'Ryde - Ride Sharing App',
         description: 'Connects drivers with passengers.',
-        image: `${import.meta.env.Base_URL}images/project1.png`,
+        image: `${import.meta.env.BaseURL}/images/project1.png`,
         tag: ['ReactNative', 'Node.js', 'MongoDB'],
         demoUrl: "#",
         gitHubUrl: "#"
@@ -19,7 +19,7 @@ const projects = [
         id: 2,
         title: 'Saas - Landing Page',
         description: 'React and Tailwind landing page.',
-        image: `${import.meta.env.Base_URL}images/project2.png`,
+        image: `${import.meta.env.BaseURL}/images/project2.png`,
         tag: ['React', 'Tailwind', 'Supabase'],
         demoUrl: "#",
         gitHubUrl: "#"
@@ -28,7 +28,7 @@ const projects = [
         id: 3,
         title: 'Bookwise - Book Store',
         description: 'Online bookstore application.',
-        image: `${import.meta.env.Base_URL}images/project3.png`,
+        image: `${import.meta.env.BaseURL}/images/project3.png`,
         tag: ['React', 'Node.js', 'MongoDB'],
         demoUrl: "#",
         gitHubUrl: "#"
@@ -37,7 +37,7 @@ const projects = [
         id: 4, 
         title: 'YC Dictionary - Dictionary App',
         description: 'Provides word definitions and synonyms.',
-        image: `${import.meta.env.Base_URL}images/project4.png`,
+        image: `${import.meta.env.BaseURL}/images/project4.png`,
         tag: ['React', 'Tailwind', 'Node.js'],
         demoUrl: "#",
         gitHubUrl: "#"
@@ -46,7 +46,7 @@ const projects = [
         id: 5, 
         title: 'AI - Meals Planner',
         description: 'AI-powered meal planning app.',
-        image: `${import.meta.env.Base_URL}images/project5.png`,
+        image: `${import.meta.env.BaseURL}/images/project5.png`,
         tag: ['TypeScript', 'D3.js', 'Next.js' ],
         demoUrl: "#",
         gitHubUrl: "#"
@@ -55,7 +55,7 @@ const projects = [
         id: 6, 
         title: 'Rest Explore - Restaurant Finder',
         description: '',
-        image:`${import.meta.env.Base_URL}images/project6.png`,
+        image:`${import.meta.env.Base_URL}/images/project6.png`,
         tag: ['Next.js', 'Node.js', 'Stripe'],
         demoUrl: "#",
         gitHubUrl: "#"
