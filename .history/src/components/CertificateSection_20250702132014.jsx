@@ -22,7 +22,7 @@ const certificates=[
   
   {
     id: 3,
-    title: 'Everything to Know About Git and GitHub',
+    title: 'Everything You Will Need to Know About Git and GitHub',
     description: 'Certified in full about Git and Github.',
     url: 'https://static.frontendmasters.com/ud/c/e0f3185036/tNgMJoASup/everything-git.pdf',
     issuedBy: 'Frontend Masters',
@@ -90,12 +90,12 @@ const CertificateSection = () => {
           {certificates.map((certificate , index)=>(
             <div key={index} className='group bg-card rounded-lg overflow-hidden shadow-xs card-hover'>
             <div className='h-50 overflow-hidden'>
-              <h1 className='text-2xl font-bold text-center mb-4 p-2 bg-secondary/50 text-secondary-foreground'>
+              <h1 className='text-2xl font-bold text-center mb-4 p-3 bg-secondary/50 text-secondary-foreground'>
                 {certificate.title}
               </h1>
 
-              <div className='flex flex-col  items-center justify-center gap-3 '>
-                <a href={certificate.url} target='_blank' className=' certificate-btn  font-semibold'>
+              <div className='flex flex-col  items-center justify-center ga-3'>
+                <a href={certificate.url} target='_blank' className=' certificate-btn font-semibold'>
                   View My Certificate
                 </a>
               </div>

@@ -22,7 +22,7 @@ const certificates=[
   
   {
     id: 3,
-    title: 'Everything to Know About Git and GitHub',
+    title: 'Everything You Will Need to Know About Git and GitHub',
     description: 'Certified in full about Git and Github.',
     url: 'https://static.frontendmasters.com/ud/c/e0f3185036/tNgMJoASup/everything-git.pdf',
     issuedBy: 'Frontend Masters',
