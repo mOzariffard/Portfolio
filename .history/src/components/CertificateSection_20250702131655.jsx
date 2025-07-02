@@ -86,7 +86,7 @@ const CertificateSection = () => {
       </h2>
       {/* BOX OF CERTIFICATE */}
 
-      <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+      <div className='grid sm:grid-cols-1 md:grid-cols-2 ls: grid-cols-3 gap-6'>
           {certificates.map((certificate , index)=>(
             <div className='group bg-card rounded-lg overflow-hidden shadow-xs card-hover'>
             <div className='h-50 overflow-hidden'>

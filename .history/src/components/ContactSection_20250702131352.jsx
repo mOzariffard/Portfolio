@@ -47,7 +47,7 @@ const ContactSection = () => {
                 <h3 className='text-2xl font-semibold mb-6 items-start'> Contact Information </h3>
 
                 <div className='space-y-6 justify-center'>
-                    <div className='flex items-start space-x-6'>
+                    <div className='flex items-start space-x-12'>
                         <div className='p-3 rounded-full bg-primary/10'>
                         <Mail className='w-6 h-6 text-primary' />
                         </div>
@@ -59,7 +59,7 @@ const ContactSection = () => {
                         </div>
                     </div>
 
-                    <div className='flex items-start space-x-6'>
+                    <div className='flex items-start space-x-9'>
                         <div className='p-3 rounded-full bg-primary/10'>
                         <Phone className='w-6 h-6 text-primary items-start' />
                         </div>
