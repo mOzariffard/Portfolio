@@ -6,9 +6,9 @@ import HeroSection from '@/components/HeroSection'
 import AboutSection from '@/components/AboutSection'
 import SkillsSection from '@/components/SkillsSection'
 import ProjectSection from '@/components/ProjectSection'
-import CertificateSection from '../components/CertificateSection'
-import ContactSection from '../components/ContactSection'
-import Foooter from '../components/Foooter'
+import CertificateSection from '@/components/CertificateSection'
+import ContactSection from '@/components/ContactSection'
+import Foooter from '@/components/Foooter'
 
 const Home = () => {
   return (
