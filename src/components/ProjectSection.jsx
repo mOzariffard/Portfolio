@@ -59,7 +59,17 @@ const projects = [
         tag: ['Next.js', 'Node.js', 'Stripe'],
         demoUrl: "#",
         gitHubUrl: "#"
+    },
+    {
+        id: 7, 
+        title: 'Evo Gym - Evaluation Gym',
+        description: 'Gym management system.',
+        image: `${import.meta.env.BASE_URL}/images/project7.png`,
+        tag: ['React', 'TypeScript', 'Node.js'],
+        demoUrl: "#",
+        gitHubUrl: "https://github.com/mOzariffard/fitness-web"
     }
+
 ];
 
 const ProjectSection = () => {
