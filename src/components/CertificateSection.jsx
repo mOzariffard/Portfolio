@@ -72,7 +72,17 @@ const certificates=[
     url: 'https://static.frontendmasters.com/ud/c/e0f3185036/jAQKBnHoVn/web-dev-quiz.pdf',
     issuedBy: 'Frontend Masters',
     dateIssued: 'Feb 25, 2025'
+  },
+  
+  {
+    id: 9,
+  title: "The Last Algorithms Course You Will Need",
+  description: 'Certified in full about Data structure and Aglorithms.',
+  url: 'https://static.frontendmasters.com/ud/c/e0f3185036/aPVwjxMZsP/algorithms.pdf',
+  issuedBy: 'Frontend Masters',
+  dateIssued: 'Jul 27, 2025'
   }
+
 ]
 
 
