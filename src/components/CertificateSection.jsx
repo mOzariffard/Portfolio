@@ -23,7 +23,7 @@ const certificates=[
   {
     id: 3,
     title: 'Everything to Know About Git and GitHub',
-    description: 'Certified in full about Git and Github.',
+    description: 'Certified in version control, branching, collaboration workflows, and repository management using Git and GitHub.',
     url: 'https://static.frontendmasters.com/ud/c/e0f3185036/tNgMJoASup/everything-git.pdf',
     issuedBy: 'Frontend Masters',
     dateIssued: 'Feb 25, 2025'
@@ -76,13 +76,30 @@ const certificates=[
   
   {
     id: 9,
-  title: "The Last Algorithms Course You Will Need",
-  description: 'Certified in full about Data structure and Aglorithms.',
-  url: 'https://static.frontendmasters.com/ud/c/e0f3185036/aPVwjxMZsP/algorithms.pdf',
-  issuedBy: 'Frontend Masters',
-  dateIssued: 'Jul 27, 2025'
-  }
+    title: "The Last Algorithms Course You Will Need",
+    description: 'Certified in full about Data structure and Aglorithms.',
+    url: 'https://static.frontendmasters.com/ud/c/e0f3185036/aPVwjxMZsP/algorithms.pdf',
+    issuedBy: 'Frontend Masters',
+    dateIssued: 'Jul 27, 2025'
+  },
 
+  {
+    id: 10, 
+    title: 'Computer Science',
+    description: 'Certified in foundational computer science concepts including algorithms, data structures, and programming fundamentals.',
+    url:'https://certificates.cs50.io/6e1a8be7-e23a-4224-8299-de24706387d5.pdf?size=letter',
+    issuedBy:'Harvard University',
+    dateIssued: 'OCT 12, 25'
+  },
+
+  {
+    id: 11, 
+    title: 'Git & Github ',
+    description: 'Certified in Git commands, GitHub workflows, pull requests, code reviews, and CI/CD pipeline automation.',
+    url:'https://maktabkhooneh.org/certificates/MK-W88A68/?lang=en',
+    issuedBy:'Maktabkhooneh',
+    dateIssued: 'OCT 12, 25'
+  },
 ]
 
 
