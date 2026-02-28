@@ -68,6 +68,15 @@ const projects = [
         tag: ['React', 'TypeScript', 'Node.js'],
         demoUrl: "#",
         gitHubUrl: "https://github.com/mOzariffard/fitness-web"
+    },
+    {
+        id: 8, 
+        title: 'Billiard Game',
+        description: 'Interactive billiard game.',
+        image: `${import.meta.env.BASE_URL}/images/project8.png`,
+        tag: ['Alpine', 'html' , 'Tailwindcss'],
+        demoUrl: "https://mozariffard.github.io/billiard-task/",
+        gitHubUrl: "https://github.com/mOzariffard/billiard-task"
     }
 
 ];
