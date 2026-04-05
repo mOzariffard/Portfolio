@@ -2,29 +2,76 @@ import { Github, Instagram, Linkedin, Mail, Phone, Send, Twitch } from 'lucide-r
 import React , {useState} from 'react'
 import { cn } from '@/lib/utils'
 import { useToast } from '@/hook/use-toast';
-import "react-hook-toast/dist/style.css";
+import emailjs from '@emailjs/browser';
 
 
 const ContactSection = () => {
     const {toast}=useToast();
 
     const [isSubmitting, setIsSubmitting] =useState(false);
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
 
-    const handleSubmit = (e)=>{
-            e.preventDefault();
-
-            setIsSubmitting(true);
-
-            setTimeout(() => {
-                toast({
-                    title: "Message Sent",
-                    description:"Thank you for reaching out! I'll get back to you soon.",
-                    
-                });
-                setIsSubmitting(false);
-            }, 1500);
-
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
     };
+
+    const handleSubmit = async (e)=>{
+        e.preventDefault();
+        setIsSubmitting(true);
+
+        try {
+            // Here is for the meail test 
+            const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+            const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+            const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY; 
+
+            const templateParams = {
+                from_name: formData.name,
+                from_email: formData.email,
+                message: formData.message,
+                reply_to: formData.email
+            };
+
+            await emailjs.send(serviceId, templateId, templateParams, publicKey);
+
+            toast({
+                title: "Message Sent Successfully!",
+                description: "Thank you for reaching out! I'll get back to you soon.",
+            });
+
+            // Reset form
+            setFormData({
+                name: '',
+                email: '',
+                message: ''
+            });
+
+            console.log('serviceId:', serviceId);
+console.log('templateId:', templateId);
+console.log('publicKey:', publicKey);
+
+        } catch (error) {
+            console.error('Email send failed:', error);
+            toast({
+                title: "Failed to Send Message",
+                description: "There was an error sending your message. Please try again or contact me directly.",
+                variant: "destructive"
+            });
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
+
+    
 
   return (
     <section id='contact' className='py-24 px-4 relative bg-secondary/30'>
@@ -104,6 +151,8 @@ const ContactSection = () => {
                         type="text"
                         id='name'
                         name='name'
+                        value={formData.name}
+                        onChange={handleInputChange}
                         required
                         className='w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-primary ' 
                         placeholder='Mohammadreza Zariffard....'
@@ -113,9 +162,11 @@ const ContactSection = () => {
                     <div>
                         <label htmlFor="email" className='block text-sm font-medium mb-2'> Your Email </label>
                         <input 
-                        type="email3"
+                        type="email"
                         id='email'
                         name='email'
+                        value={formData.email}
+                        onChange={handleInputChange}
                         required
                         className='w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-primary ' 
                         placeholder='john@email.com..'
@@ -127,6 +178,8 @@ const ContactSection = () => {
                         <textarea
                         id='message'
                         name='message'
+                        value={formData.message}
+                        onChange={handleInputChange}
                         required
                         className='w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-primary resize-none h-32'
                         placeholder="Hello, I'd like to talk about..."
